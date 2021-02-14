@@ -1,10 +1,14 @@
 package main
 
+// $ golang time go run main.go
+//   13.305304
+//   7.392373195907479
+//   go run main.go  3.03s user 0.33s system 111% cpu 3.023 total
+
 import (
 	"fmt"
 	"math"
 	"math/rand"
-	"strconv"
 	"time"
 )
 
@@ -98,32 +102,32 @@ func sameSuit(a, b int) bool {
 	return a/13 == b/13
 }
 
-func getCardRepr(a int) (rankStr, suitStr string) {
-	var suits [4]string = [4]string{"C", "D", "H", "S"}
-	suit := a / 13
-	rank := (a % 13) + 1
-	if rank == 1 {
-		rankStr = "A"
-	} else if rank == 11 {
-		rankStr = "J"
-	} else if rank == 12 {
-		rankStr = "Q"
-	} else if rank == 13 {
-		rankStr = "K"
-	} else {
-		rankStr = strconv.Itoa(rank)
-	}
+// func getCardRepr(a int) (rankStr, suitStr string) {
+// 	var suits [4]string = [4]string{"C", "D", "H", "S"}
+// 	suit := a / 13
+// 	rank := (a % 13) + 1
+// 	if rank == 1 {
+// 		rankStr = "A"
+// 	} else if rank == 11 {
+// 		rankStr = "J"
+// 	} else if rank == 12 {
+// 		rankStr = "Q"
+// 	} else if rank == 13 {
+// 		rankStr = "K"
+// 	} else {
+// 		rankStr = strconv.Itoa(rank)
+// 	}
 
-	suitStr = suits[suit]
-	return
-}
+// 	suitStr = suits[suit]
+// 	return
+// }
 
-func printDeck(d deck) {
-	var deckRepr [][]string
-	for _, card := range d {
-		rankStr, suitStr := getCardRepr(card)
-		deckRepr = append(deckRepr, []string{rankStr, suitStr})
-	}
+// func printDeck(d deck) {
+// 	var deckRepr [][]string
+// 	for _, card := range d {
+// 		rankStr, suitStr := getCardRepr(card)
+// 		deckRepr = append(deckRepr, []string{rankStr, suitStr})
+// 	}
 
-	fmt.Println(deckRepr)
-}
+// 	fmt.Println(deckRepr)
+// }
