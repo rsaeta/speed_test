@@ -1,10 +1,9 @@
 package main
 
-// $ golang time go run main.go
-//   13.305304
-//   7.392373195907479
-//   go run main.go  3.03s user 0.33s system 111% cpu 3.023 total
-
+// $ time ./main
+//   13.317016
+//   7.393607837526988
+//   ./main  2.72s user 0.11s system 107% cpu 2.633 total
 import (
 	"fmt"
 	"math"
