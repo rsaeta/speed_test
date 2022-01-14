@@ -6,6 +6,9 @@
 type card = number
 type deck = card[]
 
+console.log('hello team');
+
+
 function shuffle(d: deck): deck {
     var currentIndex = d.length, temporaryValue, randomIndex;
 
