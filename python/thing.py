@@ -8,8 +8,6 @@ $ python git:(python) ✗ time python3 thing.py
   python3 thing.py  90.08s user 0.86s system 94% cpu 1:36.01 total
 """
 
-print('hello team 2')
-
 def play_itr() -> int:
     deck = list(range(52))
     random.shuffle(deck)
