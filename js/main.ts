@@ -8,6 +8,8 @@ type deck = card[]
 
 console.log("foobar");
 
+console.log('barfoo');
+
 function shuffle(d: deck): deck {
     var currentIndex = d.length, temporaryValue, randomIndex;
 
