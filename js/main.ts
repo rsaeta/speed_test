@@ -6,6 +6,8 @@
 type card = number
 type deck = card[]
 
+console.log("foobar");
+
 function shuffle(d: deck): deck {
     var currentIndex = d.length, temporaryValue, randomIndex;
 
